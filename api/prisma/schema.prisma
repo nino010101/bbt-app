@@ -1,0 +1,35 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Arts{
+  id  Int @id
+  fav Int @default(0)
+  house_flag  Int @default(0)
+  disable_flag  Int @default(0)
+  book  String?
+  blood  String?
+  roots  String?
+  name  String?
+  arts_type  String?
+  maxLv  String?
+  timing  String?
+  judge  String?
+  target  String?
+  arts_range  String?
+  cost  String?
+  description  String?
+  memo  String?
+  img  String?
+  update_at String?
+}
+
+model Test{
+  id Int @id
+  name String?
+}
