@@ -12,7 +12,7 @@ export default {
     titleTemplate: '%s - front',
     title: 'front',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
     },
     meta: [
       { charset: 'utf-8' },
@@ -39,11 +39,14 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
   ],
+  types: ['@pinia/nuxt'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/composition-api/module',
+    '@pinia/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

@@ -12,6 +12,7 @@ model Arts{
   fav Int @default(0)
   house_flag  Int @default(0)
   disable_flag  Int @default(0)
+  auto  Int @default(0)
   book  String?
   blood  String?
   roots  String?
@@ -25,8 +26,21 @@ model Arts{
   cost  String?
   description  String?
   memo  String?
-  img  String?
   update_at String?
+}
+
+model Stock{
+  id  Int @id @default(autoincrement())
+  name String?
+  author String?
+  style String?
+  rootsP String?
+  rootsS String?
+  rootsT String?
+  list String?
+  memo String?
+  code String?
+  created_at String?
 }
 
 model Test{
